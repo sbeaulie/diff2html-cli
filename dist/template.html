@@ -9,27 +9,23 @@
       Author: rtfpessoa
   -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/github.min.css">
+  <link rel="stylesheet" href="github.min.css">
 
-  <!--diff2html-css-->
+  <!--diff2html-css locally not dynamic script as it is blocked by browsers CSP-->
+  <link rel="stylesheet" href=diff2html.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+  <script src="jquery.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/scala.min.js"></script>
+  <script src="highlight.min.js"></script>
+  <script src="scala.min.js"></script>
 
-  <!--diff2html-js-ui-->
+  <!--diff2html-js-ui locally not dynamic script as it is blocked by browsers CSP-->
+  <script src="diff2html-js-ui.js"></script>
+  <script src="diff2html-js-ui2.js"></script>
 
-  <script>
-    $(document).ready(function() {
-      var diff2htmlUi = new Diff2HtmlUI();
-      //diff2html-fileListCloseable
-      diff2htmlUi.highlightCode('#diff');
-    });
-  </script>
 </head>
 <body style="text-align: center; font-family: 'Source Sans Pro',sans-serif;">
-<h1>Diff to HTML by <a href="https://github.com/rtfpessoa">rtfpessoa</a></h1>
+Based on diff to HTML by <a href="https://github.com/rtfpessoa">rtfpessoa</a>
 
 <div id="diff">
   <!--diff2html-diff-->
