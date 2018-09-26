@@ -21,15 +21,9 @@
 
   <!--diff2html-js-ui locally not dynamic script as it is blocked by browsers CSP-->
   <script src="dist/diff2html-js-ui.js"></script>
+  <!-- moved the script block for $(document).ready(function() into its own script too -->
+  <script src="dist/diff2html-js-ui2.js"></script>
 
-  <script>
-    $(document).ready(function() {
-      var diff2htmlUi = new Diff2HtmlUI();
-      //diff2html-fileListCloseable
-      //diff2html-synchronisedScroll
-      diff2htmlUi.highlightCode('#diff');
-    });
-  </script>
 </head>
 <body> <!-- body style added to css in diff2html.css -->
 Based on diff to HTML by <a href="https://github.com/rtfpessoa">rtfpessoa</a>
